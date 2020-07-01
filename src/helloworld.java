@@ -1,13 +1,14 @@
 public class helloworld {
 
     public static void main(String[] args) {
-        calc(3,3);
+        calc(3,3); //argumentos
+
     }
 
     static void calc(int x, int y) {
 //        static void > declaração padrão
-//        sum> nome da função
-//        ()> define os parâmetros da função
+//        sum > nome da função
+//        () > define os parâmetros da função
         System.out.println(x+y);
         System.out.println(x/y);
         System.out.println(x-y);
