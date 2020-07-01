@@ -1,16 +1,19 @@
 public class helloworld {
 
     public static void main(String[] args) {
-        sum(20,20);
+        calc(3,3);
     }
 
-    static void sum(int x, int y) {
+    static void calc(int x, int y) {
 //        static void > declaração padrão
 //        sum> nome da função
 //        ()> define os parâmetros da função
         System.out.println(x+y);
+        System.out.println(x/y);
+        System.out.println(x-y);
+        System.out.println(x*y);
     }
-
+}
 //   texto = string
 //   numero inteiro = int
 //   numero fracionado = double
@@ -19,4 +22,4 @@ public class helloworld {
 //   métodos são instruções que você define para o programa executar
 //   system.out.println() é uma instrução de chamada
 
-}
+
