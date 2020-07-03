@@ -3,16 +3,16 @@ import java.util.Scanner;
 public class calcu {
 
     public static void main(String[] args) {
-        if (args[0].equals("soma")) {
-            int x= Integer.parseInt(args[0]);
-            int y= Integer.parseInt(args[1]);
-            System.out.println("digite dois números");
-            sum(x,y);
-        }
+        Scanner scanner=new Scanner(System.in);
+
+        System.out.println("type two numbers");
+        double number1= Double.parseDouble(scanner.nextLine());
+        double number2= Double.parseDouble(scanner.nextLine());
+
+
+        System.out.println(number1+number2);
 
     }
-    static void sum(double x, double y){
-        System.out.println(x+y);
-    }
+
 
 }

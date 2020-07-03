@@ -7,10 +7,11 @@ public class interact {
 
         Scanner scanner=new Scanner(System.in);
 
-        System.out.println("Digite seu nome");
+        System.out.println("type your name");
 
         String name=scanner.nextLine();
 
-        System.out.println("olá "+name);
+
+        System.out.println("hello "+name);
     }
 }
