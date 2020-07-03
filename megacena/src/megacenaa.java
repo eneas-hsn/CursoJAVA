@@ -12,7 +12,7 @@ public class megacenaa {
             int number=generate.nextInt(60);
             System.out.println(number);
         }
-        user user=new user();
+        user users=new user();
 //        int i=0;
 //        while(i<6){
 //            int number =generate.nextInt(60);
