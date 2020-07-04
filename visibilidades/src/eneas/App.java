@@ -15,8 +15,13 @@ public class App {
         System.out.println("Digite sua senha");
         Scanner scanner=new Scanner(System.in);
         String pass=scanner.nextLine();
-
         System.out.println(pass.equals(password));
+
+        //      == só compara a referencia do objeto, não o conteúdo
+//        EX:
+//        String x= new String("123456");
+//        String y=new String ("123456");
+//        System.out.println(x==y);  vai dar igual a false
 
 //        MANIPULAÇÃO DE STRINGS
 //        String x="  Hello world";
