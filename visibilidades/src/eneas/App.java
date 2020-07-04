@@ -18,5 +18,12 @@ public class App {
         long f=11; //int só que com mais espaço
         float g=12.1f; //double com menos espaço
         char h='a'; //apenas um caractere
+
+//        conversão de tipo/casting
+//        é só colocar o tipo no inicio entre parenteses
+        double z=22.2;
+        int y=2;
+        float x=(float)z/y;
+        System.out.println(x);
     }
 }
