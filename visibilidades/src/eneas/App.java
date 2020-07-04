@@ -1,5 +1,7 @@
 package eneas;
 
+import java.util.Scanner;
+
 public class App {
 //    escopo padrão (default)
     static double y=20;
@@ -9,26 +11,34 @@ public class App {
     private static double z=15;
 
     public static void main(String[] args) {
-        String x="  Hello world";
-        //quantidade de caracteres
-        System.out.println(x.length());
-        //concatenação
-        System.out.println(x+" e ae");
-        //ver se contem tal palavra
-        System.out.println(x.contains("hello"));
-        //ver onde começa tal palavra
-        System.out.println(x.indexOf("world"));
-        //capslock
-        System.out.println(x.toUpperCase());
-        //minusculo
-        System.out.println(x.toLowerCase());
-        //remove espaços desnecessarios
-        System.out.println(x.trim());
-        //ver texto a partir do numero selecionado
-        System.out.println(x.substring(4));
-        //da uma resposta booleana de acordo com uma comparação, vai ver se é igual
-        System.out.println(x.equals("eae"));
+        String password="123456en";
+        System.out.println("Digite sua senha");
+        Scanner scanner=new Scanner(System.in);
+        String pass=scanner.nextLine();
 
+        System.out.println(pass.equals(password));
+
+//        MANIPULAÇÃO DE STRINGS
+//        String x="  Hello world";
+//        //quantidade de caracteres
+//        System.out.println(x.length());
+//        //concatenação
+//        System.out.println(x+" e ae");
+//        //ver se contem tal palavra
+//        System.out.println(x.contains("hello"));
+//        //ver onde começa tal palavra
+//        System.out.println(x.indexOf("world"));
+//        //capslock
+//        System.out.println(x.toUpperCase());
+//        //minusculo
+//        System.out.println(x.toLowerCase());
+//        //remove espaços desnecessarios
+//        System.out.println(x.trim());
+//        //ver texto a partir do numero selecionado
+//        System.out.println(x.substring(4));
+//        //da uma resposta booleana de acordo com uma comparação, vai ver se é igual
+//        System.out.println(x.equals("eae"));
+//
 
 ////        tipos primitivos
 //        String a="eae";  //não é tipo primitivo, e sim um objeto
