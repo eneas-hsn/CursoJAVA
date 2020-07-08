@@ -1,18 +1,14 @@
 package eneas.app;
-import eneas.App;
+
 public class user {
-    private boolean isLogged;
-    public String lastname;
-    public String firstname;
-    public String fullName;
+    private String firstname;
+    private String lastname;
 
-
-    public String getFullName(){
-        return firstname+" "+lastname;
-
+    public void setFirstname(String firstname) {
+        this.firstname=firstname.toUpperCase();
     }
-
-    public void setLogged(boolean logged){
-        isLogged=logged;
+    public String getFirstname(){
+        return firstname;
     }
 }
+
