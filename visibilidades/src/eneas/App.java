@@ -1,21 +1,34 @@
 package eneas;
 
+import eneas.app.user;
+
 import java.util.Scanner;
 
 public class App {
-//    escopo padrão (default)
-    static double y=20;
-//    visibilidade publica/ para todos os packages
-    public static double x=25;
-//    visibilidade private/ privada para todos os packages
-    private static double z=15;
-
     public static void main(String[] args) {
-        String password="123456en";
-        System.out.println("Digite sua senha");
-        Scanner scanner=new Scanner(System.in);
-        String pass=scanner.nextLine();
-        System.out.println(pass.equals(password));
+        user userA=new user();
+        userA.firstname="eneas";
+        userA.lastname="neto";
+        String fullName=userA.getFullName();
+
+        System.out.println(fullName);
+    }
+
+
+
+////    escopo padrão (default)
+//    static double y=20;
+////    visibilidade publica/ para todos os packages
+//    public static double x=25;
+////    visibilidade private/ privada para todos os packages
+//    private static double z=15;
+//
+//    public static void main(String[] args) {
+//        String password="123456en";
+//        System.out.println("Digite sua senha");
+//        Scanner scanner=new Scanner(System.in);
+//        String pass=scanner.nextLine();
+//        System.out.println(pass.equals(password));
 
         //      == só compara a referencia do objeto, não o conteúdo
 //        EX:
@@ -63,4 +76,4 @@ public class App {
 //        System.out.println(x);
 
     }
-}
+

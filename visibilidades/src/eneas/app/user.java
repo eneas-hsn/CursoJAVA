@@ -1,9 +1,18 @@
 package eneas.app;
 import eneas.App;
 public class user {
-    public static void main(String[] args) {
-        System.out.println(App.x);
+    private boolean isLogged;
+    public String lastname;
+    public String firstname;
+    public String fullName;
+
+
+    public String getFullName(){
+        return firstname+" "+lastname;
 
     }
 
+    public void setLogged(boolean logged){
+        isLogged=logged;
+    }
 }
