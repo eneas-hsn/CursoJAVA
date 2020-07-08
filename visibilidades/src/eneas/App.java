@@ -4,15 +4,14 @@ import eneas.app.user;
 
 public class App {
     public static void main(String[] args) {
-        user userA=new user();
-        userA.setFirstname("eneas neto");
-
-        user userB=new user();
-        userB.setFirstname("nome aleatorio");
-        userB.setLastname("ponto COM");
-
-        System.out.println(userB.getFirstname());
-        System.out.println(userB.getLastname());
+        user[] users=new user[10];
+        for(int i=0;i<users.length;i++){
+            user atual=new user();
+            atual.setFirstname("nome "+i );
+            atual.setLastname("sobrenome "+i);
+            users[i]=atual;
+        }
+        System.out.println(users[3].getFirstname());
     }
 }
 

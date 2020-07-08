@@ -5,14 +5,14 @@ public class user {
     private String lastname;
 
     public void setFirstname(String firstname) {
-        this.firstname=firstname.toUpperCase();
+        this.firstname=firstname;
     }
     public String getFirstname(){
         return firstname;
     }
 
     public void setLastname(String lastname){
-        this.lastname=lastname.toLowerCase();
+        this.lastname=lastname;
     }
 
     public String getLastname() {
