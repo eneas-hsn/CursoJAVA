@@ -9,8 +9,10 @@ public class App {
 
         user userB=new user();
         userB.setFirstname("nome aleatorio");
+        userB.setLastname("ponto COM");
 
         System.out.println(userB.getFirstname());
+        System.out.println(userB.getLastname());
     }
 }
 

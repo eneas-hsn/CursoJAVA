@@ -10,5 +10,13 @@ public class user {
     public String getFirstname(){
         return firstname;
     }
+
+    public void setLastname(String lastname){
+        this.lastname=lastname.toLowerCase();
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
 }
 
